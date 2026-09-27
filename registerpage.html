@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - CryPIto</title>
+    <link rel="stylesheet" href="registerpage.css">
+</head>
+<body>
+    <div class="registration-container">
+        <h1 class="registration-title">Registration</h1>
+        
+        <form id="registrationForm" novalidate>
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label class="form-label" for="fullName">Full Name</label>
+                    <div class="input-container">
+                        <input type="text" id="fullName" class="form-input" placeholder="full name">
+                        <span class="input-icon" id="fullNameIcon"></span>
+                    </div>
+                    <div class="error-message" id="fullNameError"></div>
+                    <div class="success-message" id="fullNameSuccess"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="username">Username</label>
+                    <div class="input-container">
+                        <input type="text" id="username" class="form-input" placeholder="username">
+                        <span class="input-icon" id="usernameIcon">👤</span>
+                    </div>
+                    <div class="error-message" id="usernameError"></div>
+                    <div class="success-message" id="usernameSuccess"></div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="form-label" for="email">Email Address</label>
+                    <div class="input-container">
+                        <input type="email" id="email" class="form-input" placeholder="email address">
+                        <span class="input-icon" id="emailIcon"></span>
+                    </div>
+                    <div class="error-message" id="emailError"></div>
+                    <div class="success-message" id="emailSuccess"></div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="form-label" for="password">Password</label>
+                    <div class="input-container">
+                        <input type="password" id="password" class="form-input" placeholder="••••••••">
+                        <span class="input-icon" id="passwordToggle">👁</span>
+                    </div>
+                    <div class="password-strength">
+                        <div class="strength-bar">
+                            <div class="strength-fill" id="strengthFill"></div>
+                        </div>
+                        <div class="strength-text" id="strengthText">Password strength</div>
+                    </div>
+                    <div class="error-message" id="passwordError"></div>
+                    <div class="success-message" id="passwordSuccess"></div>
+                </div>
+
+ 
+                <div class="form-group">
+                    <label class="form-label" for="phone">Phone Number</label>
+                    <div class="phone-input-container">
+                        <select class="country-select" id="countryCode">
+                            <option value="+1">USA</option>
+                            <option value="+44">CN</option>
+                            <option value="+91">INA</option>
+                            <option value="+86">KR</option>
+                            <option value="+49">JP</option>
+                        </select>
+                        <div class="input-container phone-input">
+                            <input type="tel" id="phone" class="form-input" placeholder="(000) 123-3344">
+                            <span class="input-icon" id="phoneIcon">i</span>
+                        </div>
+                    </div>
+                    <div class="error-message" id="phoneError"></div>
+                    <div class="success-message" id="phoneSuccess"></div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="form-label" for="confirmPassword">Confirm Password</label>
+                    <div class="input-container">
+                        <input type="password" id="confirmPassword" class="form-input" placeholder="••••••••">
+                        <span class="input-icon" id="confirmPasswordToggle">👁</span>
+                    </div>
+                    <div class="error-message" id="confirmPasswordError"></div>
+                    <div class="success-message" id="confirmPasswordSuccess"></div>
+                </div>
+            </div>
+
+
+            <div class="social-login">
+                <div class="social-btn google" title="Continue with Google">G</div>
+                <div class="social-btn facebook" title="Continue with Facebook">f</div>
+            </div>
+
+ 
+            <div class="login-link">
+                Already Have Account? <a href="#signin">Sign In</a>
+            </div>
+
+
+            <button type="submit" class="register-btn" id="registerBtn" disabled>
+                Register
+            </button>
+        </form>
+    </div>
+
+    <script src="registerpage.js"></script>
+</body>
+</html>
